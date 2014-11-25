@@ -42,8 +42,9 @@ var neededValue = function(){
 	var listItem = createNewOrder(needed.value);
 
 	//this is used to append
+	console.log(incompleteTask);
 	incompleteTask.appendChild(listItem);
-	// bindTaskEvents(listItem, completedTask);
+	bindTaskEvents(listItem, completedTask);
 }
 
 addingTask.onclick = neededValue;
@@ -67,7 +68,7 @@ var delItem = function(){
 
 //marking some tasks as completed
 var completedTask = function() {
-	console.log("completed...")
+	console.log("completed...");
 
 	var listItem = this.parentNode;
 	completeTask.appendChild(listItem);
@@ -94,11 +95,11 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
 	var del = taskListItem.querySelector('button.deleteTask');
 
 	// console.log(edited);
-	edited.onclick =  editedTask;
+	// edited.onclick =  editedTask;
 
-	del.onclick = delItem;
+	// del.onclick = delItem;
 
-	checkBox.onChange = checkBoxEventHandler;
+	checkBox.onchange = checkBoxEventHandler;
 }
 
 // addingTask.onclick = neededValue;
@@ -107,12 +108,12 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
 //completed tasks
 for (var i=0; i<incompleteTask.children.length; i++) {
 
-	bindTaskEvents(incompleteTask.children[i], completeTask);
+	bindTaskEvents(incompleteTask.children[i], completedTask);
 }
 
 
 //incomplete tasks
 for (var i=0; i < completeTask.children.length; i++) {
 
-	bindTaskEvents(completeTask.children[i], incompleteTask);
+	bindTaskEvents(completeTask.children[i], incompletedTask);
 }
