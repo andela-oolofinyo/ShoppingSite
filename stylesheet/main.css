@@ -33,7 +33,7 @@ h1{
 }
 
 h1 img{
-	height: 1.4em;
+	height: 1.3em;
 	width: auto;
 	position: relative;
 	margin: 0 1em 0 0;
@@ -85,18 +85,18 @@ button:hover {
 
 /********ADD DIV********/
 
-#add{
+#add {
 	margin: 0 auto;
 	text-align: center;
 	/*display: inline-block;*/
 }
 
 
-#add h3{
+#add h3 {
 	width: 20em;
 	margin: 8px 10px;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 0.8em;
 	text-align: center;
 	background-color: #FF8300;
 	border: 1px solid #ddd;
@@ -131,7 +131,6 @@ h3 img{
     color: #888;
 }
 
-
 /*************DIV LIST******************/
 #list h3{
 	width: 20em;
@@ -151,10 +150,11 @@ h3 img{
 
 li {
   overflow: hidden;
+  position: relative;
   padding: 1.2em 0;
   margin: 10px;
-  height: 50%;
   border-bottom: 1px solid #eee;
+  /*width:50%;*/
   text-align: center;
   font-size: 1em;
   font-family:'Lato', sans-serif;
@@ -186,7 +186,7 @@ li  .delete:hover {
 
 /*************BOUGHT DIV*****************/
 
-#bought h3{
+#bought h3 {
 	width: 20em;
 	margin: 8px 10px;
 	margin: 0 auto;
