@@ -85,10 +85,6 @@ button:hover {
 
 /********ADD DIV********/
 
-/*#add {
-	text-align: center;
-	}*/
-
 
 #add h3, #bought h3, #list h3{
 	margin: 0 auto;
@@ -133,12 +129,8 @@ h3 img{
 #list, #bought, #add {
 	width: 50%;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
-#list li, #bought li, #add li {
-	border: 1px solid blue;
-}
 
 #list h3{
 	background-color: #00FF00;
