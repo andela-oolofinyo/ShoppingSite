@@ -3,40 +3,94 @@
 body{
 	margin: 0 auto;
 	text-decoration: none;
-	/*background: url('../img/china.png') no-repeat;*/
+	background: url('../img/china.png') no-repeat;
 	background-size: cover;
 }
 
+section{
+
+	padding-left: 20em;
+}
+=================================================
+
+
+		HEADER
+
+================================================
+
 header{
-	text-align: center;
+	/*text-align: center;*/
 	margin: 0 auto;
 
 }
+
 h1{
 	font-family: 'Abril Fatface', cursive;
 	font-size: 3em;
 	margin: 1em;
-	color: #501AFF;
+	color: white;
+	text-align: center;
 }
 
 h1 img{
-	background-size: 5px 3px;
+	height: 1.4em;
+	width: auto;
+	position: relative;
+	margin: 0 1em 0 0;
 }
+
+=================================================
+
+		BODY
+
+
+================================================
 
 #centerpage{
 	margin: 0 auto;
-	display: inline-block;
 	width: 100%;
 	height: auto;
 	text-align: center;
-	/*padding-left: 10em;*/
+	}
+
+input, button {
+  outline: none;
 }
+
+input:focus {
+  color: #333;
+}
+
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+
+button:hover {
+  color: white;
+}
+
+/*=========================================
+
+		NEW Task
+===========================================*/
+
+
+/********ADD DIV********/
 
 #add{
 	margin: 0 auto;
 	text-align: center;
-	/*display: inline;*/
+	/*display: inline-block;*/
 }
+
 
 #add h3{
 	width: 20em;
@@ -44,63 +98,93 @@ h1 img{
 	margin: 0 auto;
 	padding: 1em;
 	text-align: center;
-	background-color: #eee;
+	background-color: #FF8300;
 	border: 1px solid #ddd;
 	color: #333;
-	font-weight: bold;
+	font-weight: 500;
 	font-family:'Lato', sans-serif;
-	font-weight: 100;
 	font-size: 1.5em;
+	border-bottom: 2px solid #333;
+  	text-transform: uppercase;
+
+}
+
+h3 img{
+	height: 1.7em;
+	width: auto;
+	position: relative;
 }
 
 #add input{
 	margin-left: auto;
     margin-right: auto;
+    font-size: 1.1em;
+    padding: 10px;
     margin-top: 0.7em;
     display: block;
     width: 15em;
-    height: 3em;
+    height: 1.3em;
     opacity: 0.6;
+    line-height: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 0.4em;
+    color: #888;
 }
 
-/*#add p{
-	color: tomato;
-	display: inline-block;
-	font-size: 1em;
-	margin: 2em;
-}
-*/
 
+/*************DIV LIST******************/
 #list h3{
 	width: 20em;
 	margin: 8px 10px;
 	margin: 0 auto;
 	padding: 1em;
 	text-align: center;
-	background-color: #eee;
+	background-color: #00FF00;
 	border: 1px solid #ddd;
 	color: #333;
-	font-weight: bold;
+	font-weight: 500;
 	font-family:'Lato', sans-serif;
-	font-weight: 100;
 	font-size: 1.5em;
+	border-bottom: 2px solid #333;
+  	text-transform: uppercase;
 }
 
-#list input {
-	font-size: 1em;
-	display: inline-block;
-	font-family:'Lato', sans-serif;
-	font-weight: 100;
-	border: 0 0 0 2px solid black;
+li {
+  overflow: hidden;
+  padding: 1.2em 0;
+  margin: 10px;
+  height: 50%;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 1em;
+  font-family:'Lato', sans-serif;
 }
 
-#list p{
-	color: tomato;
-	display: inline-block;
-	font-size: 1em;
-	margin: 2em;
+li input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+
 }
 
+li label {
+  font-size: 1.3em;
+  line-height: 2em;
+  width: 15em;
+  padding: 0 0 0 11px;
+  color: white;
+}
+
+li   input[type="text"] {
+  width: 14em;
+}
+
+li  .delete:hover {
+  color: #CF2323;
+}
+
+
+
+/*************BOUGHT DIV*****************/
 
 #bought h3{
 	width: 20em;
@@ -108,20 +192,26 @@ h1 img{
 	margin: 0 auto;
 	padding: 1em;
 	text-align: center;
-	background-color: #eee;
+	background-color: #1186FF;
 	border: 1px solid #ddd;
 	color: #333;
-	font-weight: bold;
+	font-weight: 500;
 	font-family:'Lato', sans-serif;
-	font-weight: 100;
 	font-size: 1.5em;
+	border-bottom: 2px solid #333;
+  	text-transform: uppercase;
 }
 
-#bought p{
-	color: tomato;
-	display: inline-block;
-	font-size: 1em;
-	margin: 2em;
-	border-style: solid;
-	border-bottom: 2px thick black;
+
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  text-decoration: line-through; 
+  color: #FF0013;
 }
