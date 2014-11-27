@@ -103,6 +103,10 @@ button:hover {
 	background-color: #FF8300;
 }
 
+#add h3:hover {
+	cursor: pointer;
+}
+
 
 h3 img{
 	height: 1.7em;
